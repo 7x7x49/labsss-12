@@ -22,7 +22,7 @@ public class Main {
             do {
                 IpFind = match.find();
                 if (IpFind) {
-                    fw.write(match.group().replace(" ", "") + "\n"); //получает коллекцию групп, соответствующих регулярному выражению
+                    fw.write(match.group().replace(" ", "") + "\n");                     //получает коллекцию групп, соответствующих регулярному выражению
                     System.out.println("IP address recorded.");
                     fw.flush();                                                          //записывает то, что уже передал с помощью метода write()
                     matches++;
